@@ -4,7 +4,7 @@ import requests
 import json
 
 # Set up your SQS queue URL and boto3 client
-url = "https://sqs.us-east-1.amazonaws.com/440848399208/xxxxxxx"
+url = "https://sqs.us-east-1.amazonaws.com/440848399208/svc8ft"
 sqs = boto3.client('sqs')
 
 def delete_message(handle):
@@ -56,3 +56,4 @@ def get_message():
 # Trigger the function
 if __name__ == "__main__":
     get_message()
+
